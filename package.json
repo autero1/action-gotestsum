@@ -1,6 +1,6 @@
 {
   "name": "action-gotestsum",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "GitHub action for setting up gotestsum",
   "author": "Petri Autero",
   "license": "MIT",
