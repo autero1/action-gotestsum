@@ -54,7 +54,7 @@ jobs:
 
       - run: npm run build
 
-      - name: Install Terragrunt
+      - name: Install Gotestsum
         uses: ./
         with:
           gotestsum_version: 0.4.1

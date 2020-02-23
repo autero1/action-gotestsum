@@ -101,9 +101,14 @@ export async function downloadGotestsum(version: string): Promise<string> {
     const unzippedPath = await toolCache.extractTar(dlPath);
     core.info(`[INFO] Unzipped to: '${unzippedPath}'`);
 
+    const absExecutable = `${unzippedPath}${
+      path.sep
+    }${executableName}${getExecutableExtension()}`;
+    core.info(`[INFO] Absolute path to executable: '${absExecutable}'`);
+
     // Cache the tool
     cachedToolpath = await toolCache.cacheFile(
-      unzippedPath,
+      absExecutable,
       executableName + getExecutableExtension(),
       executableName,
       version
