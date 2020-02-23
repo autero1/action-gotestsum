@@ -1,0 +1,16 @@
+name: 'Gotestsum installer'
+description: 'Install a specific version of gotestsum binary.'
+author: 'Petri Autero'
+inputs:
+  gotestsum_version:
+    description: 'Gotestsum version to install'
+    required: true
+outputs:
+  gotestsum_path:
+    description: 'Path to the gotestsum binary'
+branding:
+  icon: cloud
+  color: 'orange'
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
