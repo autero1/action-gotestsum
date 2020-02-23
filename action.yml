@@ -9,7 +9,7 @@ outputs:
   gotestsum_path:
     description: 'Path to the gotestsum binary'
 branding:
-  icon: cloud
+  icon: check-square
   color: 'orange'
 runs:
   using: 'node12'
