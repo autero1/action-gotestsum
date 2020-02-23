@@ -48,8 +48,8 @@
     "Actions",
     "JavaScript Action",
     "TypeScript Action",
-    "Terragrunt",
-    "Terraform"
+    "Go",
+    "Testing"
   ],
   "devDependencies": {
     "@types/jest": "^25.1.2",
