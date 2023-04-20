@@ -47,14 +47,14 @@ export function getDownloadURL(version: string): string {
   }
 }
 
-const walkSync = function(
+const walkSync = function (
   dir: string,
   filelist: string[],
   fileToFind: string
 ): string[] {
   const files = fs.readdirSync(dir);
   filelist = filelist || [];
-  files.forEach(function(file) {
+  files.forEach(function (file) {
     if (fs.statSync(path.join(dir, file)).isDirectory()) {
       filelist = walkSync(path.join(dir, file), filelist, fileToFind);
     } else {
