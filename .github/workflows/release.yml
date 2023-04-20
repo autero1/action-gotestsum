@@ -9,7 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Dump GitHub context
         env:
@@ -20,6 +20,7 @@ jobs:
         run: |
           export HUB_VERSION="2.14.1"
           curl -fsSL https://github.com/github/hub/raw/40e421edd2c63d57bb8daa4bb9bbdfa21e8becf9/script/get | bash -s "${HUB_VERSION}"
+
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
