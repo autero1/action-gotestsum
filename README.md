@@ -25,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup gotestsum
-        uses: autero1/action-gotestsum@v2
+        uses: autero1/action-gotestsum@v2.0.0
         with:
           gotestsum_version: 0.4.1
       - name: Interact with gotestsum
